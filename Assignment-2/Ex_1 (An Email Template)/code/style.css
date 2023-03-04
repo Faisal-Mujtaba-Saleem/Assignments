@@ -2,8 +2,7 @@
 
 .container::before {
     content: '';
-    background: url('kuztefjfmcr54smwt-Meta_Blogs.png') no-repeat center center/cover;
-    /* background: url('mongodb-envelope.png') no-repeat center center/cover; */
+    background: url('/Logos & images/kuztefjfmcr54smwt-Meta_Blogs.png') no-repeat center center/cover;
     position: absolute;
     opacity: 0.3;
     top: 0px;
@@ -82,13 +81,9 @@ ul {
 
 li {
     list-style: none;
-    margin: 0px -460px
-}
-
-.logos {
-    width: -webkit-fill-available;
+    margin-right: 2.2em;
 }
 
 .logo-png {
-    height: 33px;
+    width: 33px;
 }
