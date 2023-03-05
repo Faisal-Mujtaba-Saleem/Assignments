@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+@keyframes Growth {
+  40% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+
+  0% {
+    width: 40%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  background-color: #5d21df;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: -20px;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40vw;
+  margin-top: 8vh;
+  font-size: 12px;
+}
+
+.btn {
+  border: 2px solid transparent;
+  padding: 10px 30px;
+  color: rgb(93, 33, 223);
+  background: rgba(2, 239, 182, 255);
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+#str:hover {
+  background-color: #6225FF;
+  color: aqua;
+}
+
+#weak:hover {
+  background-color: #6225FF;
+  color: aqua;
+}
+
+hr {
+  margin: 20px;
+  border: 1px solid rgba(2, 239, 182, 255);
+  width: 40vw;
+  animation: Growth 4s ease-in-out 1s;
+}
+
+.paras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rt-paras {
+  display: flex;
+  flex-direction: column;
+}
+
+.lft-paras {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.para {
+  padding: 12px;
+  margin: 18px;
+  color: wheat;
+  background-color: #6225FF;
+  font-weight: bold;
+}
+
+.para:hover {
+  background-color: transparent;
+  color: aqua;
+
+}
+
+footer {
+  padding: 12px;
+  margin: 20px;
+  margin-bottom: 0%;
+  color: wheat;
+  background-color: black;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: 'Italianno', cursive;
+  font-size: -webkit-xxx-large;
+  margin: 8px;
+}
