@@ -3,4 +3,5 @@
 
 let tempInFahrenheit = 72;
 let tempInCelcius = (tempInFahrenheit - 32) * (5 / 9);
-console.log(tempInCelcius);
+
+console.log(`Converted value in Celcius, ${tempInCelcius}`);
