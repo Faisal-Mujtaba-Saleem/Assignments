@@ -1,9 +1,8 @@
 console.log("Welcome to the Assignment 5");
+
 console.log('*--------------------------------------------------------------------------------------------*');
 console.group('*------------------------------------- The Start ... -------------------------------------*');
 
-// Assignment 5 : Task_01 Code Block...
-// Write a function that takes an array of numbers as input and returns the sum of all even numbers in the array.
 console.group(`Assignment 5 : Task_01 Code Block...\nWrite a function that takes an array of numbers as input and returns the sum of all even numbers in the array :`);
 {
     function extractTheSumOfAllEvenNumbers(array) {
@@ -27,11 +26,9 @@ console.group(`Assignment 5 : Task_01 Code Block...\nWrite a function that takes
 
 }
 console.groupEnd();
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_02 Code Block...
-// Write a function that takes a string as input and returns the number of vowels in the string.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_02 Code Block...\nWrite a function that takes a string as input and returns the number of vowels in the string :`);
 {
     function getTheNumbersOfVowels(string) {
@@ -64,11 +61,9 @@ console.group(`Assignment 5 : Task_02 Code Block...\nWrite a function that takes
     console.log(`The number of Vowels present in the string :\n ${NumbersOfVowels}`);
 }
 console.groupEnd();
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_03 Code Block...
-// Write a function that takes an array of strings as input and returns the length of the longest string in the array.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_03 Code Block...\nWrite a function that takes an array of strings as input and returns the length of the longest string in the array :`);
 {
     function getTheLongestStringLen(array) {
@@ -86,11 +81,9 @@ console.group(`Assignment 5 : Task_03 Code Block...\nWrite a function that takes
 
 }
 console.groupEnd();
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_04 Code Block...
-// Write a function that takes an array of numbers as input and returns the average of all the numbers in the array.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_04 Code Block...\nWrite a function that takes an array of numbers as input and returns the average of all the numbers in the array :`);
 {
     const avg_function = (array) => {
@@ -107,11 +100,9 @@ console.group(`Assignment 5 : Task_04 Code Block...\nWrite a function that takes
 
 }
 console.groupEnd();
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_05 Code Block...
-// Write a function that takes an object as input and returns an array of all the keys in the object.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_05 Code Block..\nWrite a function that takes an object as input and returns an array of all the keys in the object :`);
 {
     function packAllTheKeysInArray(object) {
@@ -127,11 +118,8 @@ console.group(`Assignment 5 : Task_05 Code Block..\nWrite a function that takes 
 
 }
 console.groupEnd()
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_06 Code Block...
-// Write a function that takes an array of objects as input and returns an array of all the values for a specified key in each object.
+console.log('*--------------------------------------------------------------------------------------------*');
 console.group(`Assignment 5 : Task_06 Code Block...\nWrite a function that takes an array of objects as input and returns an array of all the values for a specified key in each object :`);
 {
     function packAllTheValuesInArray(array) {
@@ -165,22 +153,40 @@ console.group(`Assignment 5 : Task_06 Code Block...\nWrite a function that takes
 
 }
 console.groupEnd()
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_07 Code Block...
-// Write a function that takes an array of strings as input and returns an array of all the unique strings in the array.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_07 Code Block... \nWrite a function that takes an array of strings as input and returns an array of all the unique strings in the array :`);
 {
-    // Can't understand the Question
-    console.log(`Can't understand the Question`);
+    const UniqueStringArray_Generator = (array) => {
+        // Nested Function ...:
+        /* <----------------------------------------------------------------------------------------------> */
+        function UniqueString_Generator(string) {
+            const string_copy = string;
+            string = '';
+            for (const char of string_copy) {
+                if (!(string.includes(char))) {
+                    string += char;
+                }
+            }
+            // console.log(string);
+            return string;
+        }
+        /* <----------------------------------------------------------------------------------------------> */
+        const array_mutated = array.map(element => {
+            return UniqueString_Generator(element);
+        });
+        // console.log(array_mutated);
+        return array_mutated;
+    }
+    const cars = ["Saab", "volvo", "BMMW"];
+    const uniqueStrings_cars = UniqueStringArray_Generator(cars);
+    console.log(`The array of all unique strings of cars array :\n ${uniqueStrings_cars}`);
 }
 console.groupEnd();
-console.log('*--------------------------------------------------------------------------------------------*');
-/* <------------------------------------------------------------------------------------------------------> */
 
-// Assignment 5 : Task_08 Code Block...
-// Write a function that takes an array of numbers as input and returns the product of all the numbers in the array.
+console.log('*--------------------------------------------------------------------------------------------*');
+
 console.group(`Assignment 5 : Task_08 Code Block... \nWrite a function that takes an array of numbers as input and returns the product of all the numbers in the array :`);
 {
     const getTheProductOfAllElements = (array) => {
@@ -198,5 +204,6 @@ console.group(`Assignment 5 : Task_08 Code Block... \nWrite a function that take
 }
 console.groupEnd()
 console.groupEnd();
+
 console.log('*------------------------------------- The End ... -------------------------------------*');
 console.log('*--------------------------------------------------------------------------------------------*');
